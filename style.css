@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: black;
+	max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+	color: #fff;
+}
+a{
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.open{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 100000;
+}
+.open .layer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	animation: open 1s ease-in-out forwards;
+}
+	.open .layer:nth-child(1) {
+		background-color: #ffbc35;
+		z-index: 2
+	}
+.open .layer:nth-child(2){
+	background-color: #ffbc35;
+	z-index: 1;
+	animation-delay: 1s;
+}
+@keyframes open{
+	0%{
+		transform: scaleY(1);
+	}
+	100%{
+		transform: scaleY(0);
+	}
+}
+
+
+.main_div img{
+	width: 80%;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*.main_div .change_color {
+	background-color: blue;
+}*/
+.main_div .top_bar .top_left {
+	font-size: 20px;
+	background-color: #101010;
+	letter-spacing: 0px;
+	padding: -20px;
+	text-align: center;
+	padding-top: 4px;
+}
+.main_div .top_bar{
+	border-bottom: 2px solid #ffbc35;
+}
+.main_div .top_bar .top_right{
+	background-color: #ffbc35;
+	color: black;
+	font-weight: bold;
+	padding-top: 4px;
+}
+.bottom_main button{
+	padding: 10px 15px;
+	background-color: #ffbc35;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	margin-left: 30%;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+.border{
+	width: 100px;
+	height: 3px;
+	background-color: #ffbc35;
+	border: 1px solid #ffbc35;
+	outline: none;
+	margin: 0 auto;
+}
+
+#exchanges .website {
+	width: 90%;
+	background-color: #ffbc35;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+#exchanges .website h4{
+   font-size: 20px;
+   color: black;
+   padding-top: 10px;
+   padding-left: 10px;
+   margin-bottom: -2px!important;
+   text-transform: capitalize;
+   letter-spacing: 1px;
+
+}
+	#exchanges .website a {
+		font-size: 15px;
+		color: #ffbc35;
+		margin-bottom: -10px !important;
+		padding-left: 10px;
+		transition: 0.5s ease;
+	}
+	#exchanges .website:hover {
+		background-color: #000000;
+		border: 1px solid #ffbc35;
+	}
+#exchanges .website:hover a{
+	color: #fff!important;
+}
+		#exchanges .website:hover h4 {
+			color: #ffbc35 !important;
+		}
+
+
+
+section .container .deal {
+	width: 100%;
+	margin: 20px auto;
+	background-color: #ffbc35;
+	padding: 10px;
+	border: 1px solid #ffbc35;
+	transition: 0.5s;
+}
+
+	section .container .deal:hover {
+		background: #ffbc35;
+		color: #000 !important;
+	}
+section .container .rule {
+	width: 100%;
+	margin: 20px auto;
+	background-color: #ffbc35;
+	padding: 10px;
+	color: black !important;
+	border: 1px solid #ffbc35;
+	transition: 0.5s;
+}
+	section .container .rule:hover {
+		background: #ffbc35;
+		color: #fff !important;
+	}
+
+.contact .telegram{
+	 background: #0088cc;
+   padding: 8px 15px;
+   margin: 20px auto;
+   width: 170px;
+   text-align: center;
+}
+.contact .instagram {
+	background: #bc2a8d;
+	padding: 8px 15px;
+	margin: 20px auto;
+	width: 170px;
+	text-align: center;
+}	
+.contact .whatsapp{
+		background: #25D366;
+   padding: 8px 15px;
+   margin: 20px auto;
+   width: 170px;
+   text-align: center;
+}
+
+.fixedElement {
+	background-color: #25D366;
+	height:25px;
+	width:25px;
+	text-align:center;
+	font-size:17px;
+	position: fixed;
+	top: 60px;
+	right: 0px;
+	/*	width: 100%;*/
+	z-index: 100;
+	border-radius:5px;
+}
+
+/*.wts{
+	text-align:center;
+}*/
